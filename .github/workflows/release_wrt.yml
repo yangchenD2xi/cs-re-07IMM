@@ -111,15 +111,6 @@ jobs:
           df -h
           echo "=============================================="
 
-      - name: Package OpenWrt Firmware
-        if: ${{ inputs.model == 'n1_immwrt' }}
-        uses: unifreq/openwrt_packit@master
-        env:
-          OPENWRT_ARMVIRT: firmware/*.tar.gz
-          PACKAGE_SOC: s905d
-          KERNEL_VERSION_NAME: 6.6.y
-          WHOAMI: ZqinKing
-
       - name: Prepare Release Body
         run: |
           echo "云编译发布" > release_body.txt
