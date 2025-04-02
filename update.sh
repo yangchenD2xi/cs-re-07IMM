@@ -740,7 +740,7 @@ main() {
     update_pw
     install_opkg_distfeeds
     update_nss_pbuf_performance
-    set_build_signature
+    # set_build_signature
     fix_compile_vlmcsd
     update_nss_diag
     update_menu_location
